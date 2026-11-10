@@ -1,0 +1,7 @@
+[
+  { "input": "  Lane A  ", "output": "Lane A" },
+  { "input": "\u0085\ufeffCrossing\ufeff\u0085", "output": "Crossing" },
+  { "input": " 🚗 ", "output": "🚗" },
+  { "input": "\u0085\ufeff ", "output": null },
+  { "input": "A\u0000B", "output": null }
+]

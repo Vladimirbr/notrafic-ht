@@ -1,0 +1,25 @@
+/Notraffic - Fullstack developer assignment.pdf
+/docs/
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.superpowers/
+.vitest/
+dist/
+coverage/
+.coverage
+.coverage.*
+coverage.json
+playwright-report/
+test-results/
+*.tsbuildinfo
+pnpm-debug.log*

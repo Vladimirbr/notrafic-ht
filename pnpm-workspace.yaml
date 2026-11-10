@@ -1,0 +1,6 @@
+packages:
+  - frontend
+
+# GHSA-g3hv-75wg-m249 affects the minimatch range used by ESLint.
+overrides:
+  "minimatch@>=7 <11.0.1": 11.0.5

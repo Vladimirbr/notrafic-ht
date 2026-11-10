@@ -1,0 +1,50 @@
+[project]
+name = "notraffic-api"
+version = "0.1.0"
+requires-python = ">=3.15,<3.16"
+dependencies = [
+    "alembic==1.20.1",
+    "fastapi==0.162.2",
+    "psycopg[binary]==3.3.8",
+    "pydantic==2.14.3",
+    "sqlalchemy==2.1.8",
+    "uvicorn==0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx==0.28.1",
+    "pip-audit==2.10.1",
+    "pytest==9.2.0",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.4",
+]
+
+[tool.uv]
+package = false
+required-version = "==0.13.7"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--strict-markers"
+markers = ["integration: requires the disposable PostgreSQL database"]
+
+[tool.coverage.run]
+branch = true
+source = ["app"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py315"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "ASYNC"]
+ignore = ["E501"]
+
+[tool.pyright]
+include = ["app", "tests", "migrations"]
+pythonVersion = "3.15"
+venvPath = "."
+venv = ".venv"
+typeCheckingMode = "strict"

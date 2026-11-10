@@ -1,0 +1,137 @@
+[
+  {
+    "case": "triangle",
+    "points": [
+      [10, 10],
+      [110, 10],
+      [40, 100]
+    ],
+    "valid": true
+  },
+  {
+    "case": "reverse winding",
+    "points": [
+      [40, 100],
+      [110, 10],
+      [10, 10]
+    ],
+    "valid": true
+  },
+  {
+    "case": "concave",
+    "points": [
+      [0, 0],
+      [200, 0],
+      [100, 100],
+      [200, 200],
+      [0, 200]
+    ],
+    "valid": true
+  },
+  {
+    "case": "image bounds",
+    "points": [
+      [0, 0],
+      [1920, 0],
+      [1920, 1080],
+      [0, 1080]
+    ],
+    "valid": true
+  },
+  {
+    "case": "same direction collinear edge",
+    "points": [
+      [0, 0],
+      [50, 0],
+      [100, 0],
+      [100, 100],
+      [0, 100]
+    ],
+    "valid": true
+  },
+  {
+    "case": "snapped duplicate",
+    "points": [
+      [10, 10],
+      [10.0001, 10.0001],
+      [100, 0],
+      [0, 100]
+    ],
+    "valid": false
+  },
+  {
+    "case": "repeated closure",
+    "points": [
+      [10, 10],
+      [110, 10],
+      [40, 100],
+      [10, 10]
+    ],
+    "valid": false
+  },
+  {
+    "case": "zero area",
+    "points": [
+      [0, 0],
+      [100, 100],
+      [200, 200]
+    ],
+    "valid": false
+  },
+  {
+    "case": "bowtie",
+    "points": [
+      [0, 0],
+      [100, 100],
+      [0, 100],
+      [100, 0]
+    ],
+    "valid": false
+  },
+  {
+    "case": "crossing with signed area",
+    "points": [
+      [0, 0],
+      [200, 200],
+      [0, 150],
+      [100, 0]
+    ],
+    "valid": false
+  },
+  {
+    "case": "nonadjacent touch",
+    "points": [
+      [0, 0],
+      [200, 0],
+      [200, 200],
+      [100, 0],
+      [0, 200]
+    ],
+    "valid": false
+  },
+  {
+    "case": "adjacent backtrack",
+    "points": [
+      [0, 0],
+      [200, 0],
+      [100, 0],
+      [200, 200],
+      [0, 200]
+    ],
+    "valid": false
+  },
+  {
+    "case": "overlapping nonadjacent edges",
+    "points": [
+      [0, 0],
+      [200, 0],
+      [200, 100],
+      [100, 100],
+      [100, 0],
+      [300, 0],
+      [300, 200],
+      [0, 200]
+    ],
+    "valid": false
+  }
+]
